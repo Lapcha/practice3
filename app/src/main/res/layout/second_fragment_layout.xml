@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/second_fragment"
+    android:orientation="vertical"
+    android:gravity="center"
+
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <TextView
+        android:id="@+id/name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:text=""
+        android:textSize="@dimen/header"/>
+
+
+    <EditText
+        android:id="@+id/textOfCard"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:layout_marginTop="50dp"
+        android:textSize="@dimen/recipient"/>
+
+    <Button
+        android:id="@+id/buttonComeBack"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:background="@color/buttonSend"
+        android:text="@string/sendCard"
+        android:textColor="@color/white"
+
+        android:layout_marginTop="58dp"/>
+
+</LinearLayout>
