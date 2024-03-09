@@ -33,7 +33,6 @@ public class SecondFragment extends Fragment {
         binding.buttonComeBack.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-
                 Fragment fragment = new MainFragment();
                 FragmentManager manager = getActivity().getSupportFragmentManager();
 

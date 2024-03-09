@@ -24,13 +24,13 @@ public class MainActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main_linear);
+        setContentView(R.layout.main_container);
         if (savedInstanceState == null) {
             getSupportFragmentManager().beginTransaction()
                     .setReorderingAllowed(true)
-                    .add(R.id.main_container, MainFragment.class, null)
-                    .addToBackStack("first fragment")
+                    .add(R.id.externalFragment, ExternalFragment.class, null)
                     .commit();
+
         }
     }
 

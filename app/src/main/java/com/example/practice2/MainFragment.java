@@ -56,7 +56,6 @@ public class MainFragment extends Fragment {
                 result.putString("mainFragment", binding.editText.getText().toString());
                 getParentFragmentManager().setFragmentResult("dataFromMainFragment", result);
 
-
                 Fragment fragment = new SecondFragment();
                 FragmentManager manager = getActivity().getSupportFragmentManager();
                 FragmentTransaction transaction = manager.beginTransaction();
